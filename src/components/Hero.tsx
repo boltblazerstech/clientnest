@@ -4,6 +4,7 @@ import face2 from '../assets/aiface2.webp';
 import face3 from '../assets/aiface3.webp';
 import face4 from '../assets/aiface4.webp';
 import face5 from '../assets/aiface5.webp';
+import { LINKS } from '../constants/links';
 
 function Typewriter({ text }: { text: string }) {
   const characters = text.split("");
@@ -134,7 +135,7 @@ export default function Hero() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            href="https://cp-demo.boltblazers.com"
+            href={LINKS.DEMO}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gold text-forest px-8 py-3.5 rounded-full font-bold text-[15px] transition-all"
@@ -144,7 +145,7 @@ export default function Hero() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+            href={LINKS.WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
             className="border-[1.5px] border-white/30 text-white px-8 py-3.5 rounded-full font-medium hover:border-white hover:bg-white/5 transition-all flex items-center gap-2"

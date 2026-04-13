@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Home, ShieldCheck, Bell, Map, User, Calendar, FileText, CheckCircle2 } from 'lucide-react';
+import { LINKS } from '../constants/links';
 
 export default function Features() {
   const features = [
@@ -210,7 +211,7 @@ export default function Features() {
             </p>
           </div>
           <a
-            href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+            href={LINKS.WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
             className="border-[1.5px] border-gold text-gold px-7 py-3 rounded-full font-semibold hover:bg-gold hover:text-forest transition-all duration-200 whitespace-nowrap flex items-center gap-2"

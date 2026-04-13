@@ -1,6 +1,7 @@
 import { Check, Search } from 'lucide-react';
 import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
+import { LINKS } from '../constants/links';
 
 function Counter({ value }: { value: number }) {
   const [displayValue, setDisplayValue] = useState(0);
@@ -75,7 +76,7 @@ export default function AdminPortal() {
           </div>
 
           <a
-            href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+            href={LINKS.WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-[1.5px] border-gold text-gold px-7 py-3 rounded-full font-semibold hover:bg-gold hover:text-forest transition-all duration-200"

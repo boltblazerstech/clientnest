@@ -1,6 +1,7 @@
 import { useState, useEffect, MouseEvent } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { LINKS } from '../constants/links';
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -111,7 +112,7 @@ export default function Nav() {
         {/* Right: Desktop Buttons */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="https://cp-demo.boltblazers.com"
+            href={LINKS.DEMO}
             target="_blank"
             rel="noopener noreferrer"
             className="border-[1.5px] border-gold text-gold px-[22px] py-[10px] rounded-full font-semibold hover:bg-gold hover:text-forest transition-all duration-200"
@@ -119,7 +120,7 @@ export default function Nav() {
             See Live Demo
           </a>
           <a
-            href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+            href={LINKS.WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gold text-forest px-[22px] py-[10px] rounded-full font-bold hover:bg-[#C39732] transition-all duration-200 flex items-center gap-2"
@@ -167,7 +168,7 @@ export default function Nav() {
               ))}
               <div className="flex flex-col gap-4 pt-4 border-t border-sage/10">
                 <a
-                  href="https://cp-demo.boltblazers.com"
+                  href={LINKS.DEMO}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-[1.5px] border-gold text-gold px-6 py-3 rounded-full font-semibold text-center hover:bg-gold hover:text-forest transition-all"
@@ -175,7 +176,7 @@ export default function Nav() {
                   See Live Demo
                 </a>
                 <a
-                  href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+                  href={LINKS.WHATSAPP}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold text-forest px-6 py-3 rounded-full font-bold text-center hover:bg-[#C39732] transition-all flex items-center justify-center gap-2"

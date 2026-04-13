@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
+import { LINKS } from '../constants/links';
 
 export default function Comparison() {
   const bullets = [
@@ -43,7 +44,7 @@ export default function Comparison() {
 
           <motion.a
             whileHover={{ scale: 1.02 }}
-            href="https://cp-demo.boltblazers.com"
+            href={LINKS.DEMO}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-8 bg-gold text-forest px-7 py-3 rounded-full font-bold transition-all"

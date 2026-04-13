@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { LINKS } from '../constants/links';
 
 export default function WhatsAppSticky() {
   return (
@@ -7,7 +8,7 @@ export default function WhatsAppSticky() {
       animate={{ opacity: 1, scale: 1, y: 0 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+      href={LINKS.WHATSAPP}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(37,211,102,0.4)] transition-shadow hover:shadow-[0_6px_20px_rgba(37,211,102,0.6)] group"

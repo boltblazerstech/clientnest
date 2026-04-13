@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { MessageSquare, Mail, Layout, Code, Puzzle, X, Check, Minus } from 'lucide-react';
 import React from 'react';
+import { LINKS } from '../constants/links';
 
 export default function AlternativesComparison() {
   const cards = [
@@ -252,7 +253,7 @@ export default function AlternativesComparison() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <motion.a
               whileHover={{ scale: 1.02 }}
-              href="https://cp-demo.boltblazers.com"
+              href={LINKS.DEMO}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold text-forest px-8 py-3.5 rounded-full font-bold text-[15px] shadow-lg"

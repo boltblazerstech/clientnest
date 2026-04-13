@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Check, Loader2 } from 'lucide-react';
 import React, { useState } from 'react';
+import { LINKS } from '../constants/links';
 
 export default function DemoForm() {
   const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ export default function DemoForm() {
     setErrorMessage('');
 
     try {
-      const url = 'https://script.google.com/macros/s/AKfycbycOHbuwNm2ifj0EoA2575wovc4KtPIjs3GaxqFVki64T6lc11OY-WlhcbQQMwwCLkX/exec';
+      const url = LINKS.GAS_SCRIPT;
       
       // Using URLSearchParams for x-www-form-urlencoded (standard for Apps Script)
       const data = new URLSearchParams();
@@ -101,7 +102,7 @@ export default function DemoForm() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://cp-demo.boltblazers.com"
+                href={LINKS.DEMO}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold text-forest px-8 py-3.5 rounded-full font-bold text-[15px] hover:bg-[#C39732] transition-all shadow-lg"
@@ -109,7 +110,7 @@ export default function DemoForm() {
                 See Live Demo →
               </a>
               <a
-                href="https://wa.me/9470171298?text=hi,%20want%20to%20know%20more%20about%20client%20nest"
+                href={LINKS.WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-[1.5px] border-white/30 text-white px-8 py-3.5 rounded-full font-bold text-[15px] hover:bg-white/5 transition-all flex items-center gap-2"
